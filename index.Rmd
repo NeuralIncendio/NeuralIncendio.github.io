@@ -67,17 +67,17 @@ Practical Sessions will be held once a week on Wednesdays.
 
 
 ## Grading 
-| ***Main Tasks***                             | ***Points*** |
-|----------------------------------------------|--------------|
-| 1. Assignment [Neural Network Components](#Neural_Network_Components)  | 10           |
-| 2. Assignment [Image Classification](#Image_Classification)       | 10           |
+| ***Main Tasks***                                                        | ***Points*** |
+|-------------------------------------------------------------------------|--------------|
+| 1. Assignment [Neural Network Components](#Neural_Network_Components)   | 10           |
+| 2. Assignment [Image Classification](#Image_Classification)             | 10           |
 | 3. Assignment [Music Genre Identification](#Music_Genre_Identification) | 10           |
-| 4. Assignment [Image Reconstruction](#Image_Reconstruction)       | 15           |
-| 5. Assignment [Pop Music Generation](#Pop_Music_Generation)       | 15           |
-| 6. Assignment [Image Super-Resolution](#Image_Super_Resolution)     | 15           |
-| 7. Assignment [Music Composition](#Music_Composition)          | 15           |
-| 8. Final Exam                                | 10           |
-| ***Class Total***                            | 100          |
+| 4. Assignment [Image Reconstruction](#Image_Reconstruction)             | 15           |
+| 5. Assignment [Pop Music Generation](#Pop_Music_Generation)             | 15           |
+| 6. Assignment [Image Super-Resolution](#Image_Super_Resolution)         | 15           |
+| 7. Assignment [Music Composition](#Music_Composition)                   | 15           |
+| 8. Final Exam                                                           | 10           |
+| ***Class Total***                                                       | 100          |
 
 | ***Auxillary Tasks*** | ***Points*** |
 |-----------------------|--------------|

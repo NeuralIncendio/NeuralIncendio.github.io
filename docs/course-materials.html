@@ -1,237 +1,146 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="en">
 <head>
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</title>
-  <meta name="description" content="4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  <meta name="generator" content="bookdown 0.36.1 and GitBook 2.6.7" />
-
-  <meta property="og:title" content="4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  <meta property="og:type" content="book" />
-  
-  <meta property="og:description" content="4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  <meta name="github-repo" content="NeuralIncendio/Intro2DeepLearning" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  
-  <meta name="twitter:description" content="4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  
-
-<meta name="author" content="Sina Moghimi" />
-
-
-<meta name="date" content="2024-01-08" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="capstone-project-1.html"/>
-<link rel="next" href="Lecture_Notes.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-
-
-
-<style type="text/css">
-  
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-</style>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</title>
+<meta name="author" content="Sina Moghimi">
+<meta name="description" content="For those who love reading books Deep Learning (MIT Press, Ian Goodfellow) Deep Learning with PyTorch (Manning Publications, Eli Stevens)  For those who like reading online Deep Learning: Link...">
+<meta name="generator" content="bookdown 0.36.1 with bs4_book()">
+<meta property="og:title" content="4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://github.com/NeuralIncendio/course-materials.html">
+<meta property="og:description" content="For those who love reading books Deep Learning (MIT Press, Ian Goodfellow) Deep Learning with PyTorch (Manning Publications, Eli Stevens)  For those who like reading online Deep Learning: Link...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="4 Course Materials | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch">
+<meta name="twitter:description" content="For those who love reading books Deep Learning (MIT Press, Ian Goodfellow) Deep Learning with PyTorch (Manning Publications, Eli Stevens)  For those who like reading online Deep Learning: Link...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Sen-0.4.7/font.css" rel="stylesheet">
+<script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
 </head>
+<body data-spy="scroll" data-target="#toc">
 
-<body>
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Syllabus</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#course-description"><i class="fa fa-check"></i><b>1.1</b> Course Description</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i><b>1.2</b> Learning Objectives</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#course-prerequisites"><i class="fa fa-check"></i><b>1.3</b> Course Prerequisites</a></li>
-<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#course-instructor"><i class="fa fa-check"></i><b>1.4</b> Course Instructor</a></li>
-<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#communication"><i class="fa fa-check"></i><b>1.5</b> Communication</a></li>
-<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#lectures"><i class="fa fa-check"></i><b>1.6</b> Lectures</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#practical-sessions"><i class="fa fa-check"></i><b>1.7</b> Practical Sessions</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#grading"><i class="fa fa-check"></i><b>1.8</b> Grading</a></li>
-<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#capstone-project"><i class="fa fa-check"></i><b>1.9</b> Capstone Project</a></li>
-<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#late-assignments"><i class="fa fa-check"></i><b>1.10</b> Late Assignments</a></li>
-<li class="chapter" data-level="1.11" data-path="index.html"><a href="index.html#policies"><i class="fa fa-check"></i><b>1.11</b> Policies</a>
-<ul>
-<li class="chapter" data-level="1.11.1" data-path="index.html"><a href="index.html#collaboration"><i class="fa fa-check"></i><b>1.11.1</b> Collaboration</a></li>
-<li class="chapter" data-level="1.11.2" data-path="index.html"><a href="index.html#academic-integrity-and-plagerism"><i class="fa fa-check"></i><b>1.11.2</b> Academic Integrity and Plagerism</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>2</b> Assignments</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="assignments.html"><a href="assignments.html#Neural_Network_Components"><i class="fa fa-check"></i><b>2.1</b> Neural Network Components</a></li>
-<li class="chapter" data-level="2.2" data-path="assignments.html"><a href="assignments.html#Image_Classification"><i class="fa fa-check"></i><b>2.2</b> Image Classification</a></li>
-<li class="chapter" data-level="2.3" data-path="assignments.html"><a href="assignments.html#Music_Genre_Identification"><i class="fa fa-check"></i><b>2.3</b> Music Genre Identification</a></li>
-<li class="chapter" data-level="2.4" data-path="assignments.html"><a href="assignments.html#Image_Reconstruction"><i class="fa fa-check"></i><b>2.4</b> Image Reconstruction</a></li>
-<li class="chapter" data-level="2.5" data-path="assignments.html"><a href="assignments.html#Pop_Music_Generation"><i class="fa fa-check"></i><b>2.5</b> Pop Music Generation</a></li>
-<li class="chapter" data-level="2.6" data-path="assignments.html"><a href="assignments.html#Image_Super_Resolution"><i class="fa fa-check"></i><b>2.6</b> Image Super-Resolution</a></li>
-<li class="chapter" data-level="2.7" data-path="assignments.html"><a href="assignments.html#Music_Composition"><i class="fa fa-check"></i><b>2.7</b> Music Composition</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="capstone-project-1.html"><a href="capstone-project-1.html"><i class="fa fa-check"></i><b>3</b> Capstone Project</a></li>
-<li class="chapter" data-level="4" data-path="course-materials.html"><a href="course-materials.html"><i class="fa fa-check"></i><b>4</b> Course Materials</a>
-<ul>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#for-those-who-love-reading-books"><i class="fa fa-check"></i>For those who love reading books</a></li>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#for-those-who-like-reading-online"><i class="fa fa-check"></i>For those who like reading online</a></li>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#for-those-who-hate-reading-but-enjoy-watching"><i class="fa fa-check"></i>For those who hate reading but enjoy watching</a></li>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#you-would-also-love-to-check"><i class="fa fa-check"></i>You would also love to check</a></li>
-<li class="chapter" data-level="4.1" data-path="course-materials.html"><a href="course-materials.html#extra"><i class="fa fa-check"></i><b>4.1</b> Extra</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="Lecture_Notes.html"><a href="Lecture_Notes.html"><i class="fa fa-check"></i><b>5</b> Lecture Notes</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-</ul>
-
-      </nav>
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</a>
-          </h1>
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Syllabus</a></li>
+<li><a class="" href="assignments.html"><span class="header-section-number">2</span> Assignments</a></li>
+<li><a class="" href="capstone-project-1.html"><span class="header-section-number">3</span> Capstone Project</a></li>
+<li><a class="active" href="course-materials.html"><span class="header-section-number">4</span> Course Materials</a></li>
+<li><a class="" href="Lecture_Notes.html"><span class="header-section-number">5</span> Lecture Notes</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          
         </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="course-materials" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">4</span> Course Materials<a href="course-materials.html#course-materials" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="for-those-who-love-reading-books" class="section level2 unnumbered hasAnchor">
-<h2>For those who love reading books<a href="course-materials.html#for-those-who-love-reading-books" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="course-materials" class="section level1" number="4">
+<h1>
+<span class="header-section-number">4</span> Course Materials<a class="anchor" aria-label="anchor" href="#course-materials"><i class="fas fa-link"></i></a>
+</h1>
+<div id="for-those-who-love-reading-books" class="section level2 unnumbered">
+<h2>For those who love reading books<a class="anchor" aria-label="anchor" href="#for-those-who-love-reading-books"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p>Deep Learning (MIT Press, Ian Goodfellow)</p></li>
 <li><p>Deep Learning with PyTorch (Manning Publications, Eli Stevens)</p></li>
 </ul>
 </div>
-<div id="for-those-who-like-reading-online" class="section level2 unnumbered hasAnchor">
-<h2>For those who like reading online<a href="course-materials.html#for-those-who-like-reading-online" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="for-those-who-like-reading-online" class="section level2 unnumbered">
+<h2>For those who like reading online<a class="anchor" aria-label="anchor" href="#for-those-who-like-reading-online"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p>Deep Learning: <a href="https://www.deeplearningbook.org/">Link</a></p></li>
 <li><p>Dive into Deep Learning: <a href="https://d2l.ai/">Link</a></p></li>
 </ul>
 </div>
-<div id="for-those-who-hate-reading-but-enjoy-watching" class="section level2 unnumbered hasAnchor">
-<h2>For those who hate reading but enjoy watching<a href="course-materials.html#for-those-who-hate-reading-but-enjoy-watching" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="for-those-who-hate-reading-but-enjoy-watching" class="section level2 unnumbered">
+<h2>For those who hate reading but enjoy watching<a class="anchor" aria-label="anchor" href="#for-those-who-hate-reading-but-enjoy-watching"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p>MIT Introduction to Deep Learning: <a href="https://youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&amp;si=a3Q8VooQY0cLYOBZ">Link</a></p></li>
 <li><p>Pytorch Tutorials: <a href="https://youtube.com/playlist?list=PLhhyoLH6IjfxeoooqP9rhU3HJIAVAJ3Vz&amp;si=423lXjNwU2B5dxaC">Link</a></p></li>
 </ul>
 </div>
-<div id="you-would-also-love-to-check" class="section level2 unnumbered hasAnchor">
-<h2>You would also love to check<a href="course-materials.html#you-would-also-love-to-check" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="you-would-also-love-to-check" class="section level2 unnumbered">
+<h2>You would also love to check<a class="anchor" aria-label="anchor" href="#you-would-also-love-to-check"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p>Explainable AI: <a href="https://youtube.com/playlist?list=PLV8yxwGOxvvovp-j6ztxhF3QcKXT6vORU&amp;si=7N_VPAK0OkqRGiIz">Link</a></p></li>
 <li><p>Physics-Informed Neural Networks: <a href="https://youtube.com/playlist?list=PLXmYoJbJ848pkMm9NGZZKXUQJ8XWIXZX8&amp;si=_AOgnC__wzOGc9xC">Link</a></p></li>
 <li><p>Understanding Deep Learning: <a href="https://github.com/udlbook/udlbook/tree/main">Link</a></p></li>
 </ul>
 </div>
-<div id="extra" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Extra<a href="course-materials.html#extra" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="extra" class="section level2" number="4.1">
+<h2>
+<span class="header-section-number">4.1</span> Extra<a class="anchor" aria-label="anchor" href="#extra"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p>Course syllabus PDF file: <a href="https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.pdf?raw=true">Link</a></p></li>
 <li><p>Course syllabus EPUB file: <a href="https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.epub?raw=true">Link</a></p></li>
 </ul>
-
 </div>
 </div>
-            </section>
+  <div class="chapter-nav">
+<div class="prev"><a href="capstone-project-1.html"><span class="header-section-number">3</span> Capstone Project</a></div>
+<div class="next"><a href="Lecture_Notes.html"><span class="header-section-number">5</span> Lecture Notes</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#course-materials"><span class="header-section-number">4</span> Course Materials</a></li>
+<li><a class="nav-link" href="#for-those-who-love-reading-books">For those who love reading books</a></li>
+<li><a class="nav-link" href="#for-those-who-like-reading-online">For those who like reading online</a></li>
+<li><a class="nav-link" href="#for-those-who-hate-reading-but-enjoy-watching">For those who hate reading but enjoy watching</a></li>
+<li><a class="nav-link" href="#you-would-also-love-to-check">You would also love to check</a></li>
+<li><a class="nav-link" href="#extra"><span class="header-section-number">4.1</span> Extra</a></li>
+</ul>
 
-          </div>
-        </div>
-      </div>
-<a href="capstone-project-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="Lecture_Notes.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</strong>" was written by Sina Moghimi. It was last built on 2024-01-08.</p>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": true,
-"facebook": false,
-"twitter": false,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": "linkedin"
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": null,
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": [["Intro2DeepLearning.pdf", "PDF"], ["Intro2DeepLearning.epub", "EPUB"]],
-"search": {
-"engine": "lunr",
-"options": null
-},
-"toc": {
-"collapse": "subsection",
-"scroll_highlight": true
-},
-"toolbar": {
-"position": "fixed"
-},
-"info": true
-});
-});
-</script>
 
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
 </body>
-
 </html>

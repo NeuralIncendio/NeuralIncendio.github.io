@@ -1,139 +1,72 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="en">
 <head>
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</title>
-  <meta name="description" content="2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  <meta name="generator" content="bookdown 0.36.1 and GitBook 2.6.7" />
-
-  <meta property="og:title" content="2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  <meta property="og:type" content="book" />
-  
-  <meta property="og:description" content="2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  <meta name="github-repo" content="NeuralIncendio/Intro2DeepLearning" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  
-  <meta name="twitter:description" content="2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch" />
-  
-
-<meta name="author" content="Sina Moghimi" />
-
-
-<meta name="date" content="2024-01-08" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="index.html"/>
-<link rel="next" href="capstone-project-1.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-
-
-
-<style type="text/css">
-  
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-</style>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</title>
+<meta name="author" content="Sina Moghimi">
+<meta name="description" content="2.1 Neural Network Components Purpose: Understanding the fundamentals of neural networks by building components from scratch. Components: Layers, activation functions, loss functions, optimizers. ...">
+<meta name="generator" content="bookdown 0.36.1 with bs4_book()">
+<meta property="og:title" content="2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://github.com/NeuralIncendio/assignments.html">
+<meta property="og:description" content="2.1 Neural Network Components Purpose: Understanding the fundamentals of neural networks by building components from scratch. Components: Layers, activation functions, loss functions, optimizers. ...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="2 Assignments | Introduction to Deep Learning: Bridging Theory and Practice using PyTorch">
+<meta name="twitter:description" content="2.1 Neural Network Components Purpose: Understanding the fundamentals of neural networks by building components from scratch. Components: Layers, activation functions, loss functions, optimizers. ...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Sen-0.4.7/font.css" rel="stylesheet">
+<script src="libs/bs3compat-0.5.1/transition.js"></script><script src="libs/bs3compat-0.5.1/tabs.js"></script><script src="libs/bs3compat-0.5.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
 </head>
+<body data-spy="scroll" data-target="#toc">
 
-<body>
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Syllabus</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#course-description"><i class="fa fa-check"></i><b>1.1</b> Course Description</a></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i><b>1.2</b> Learning Objectives</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#course-prerequisites"><i class="fa fa-check"></i><b>1.3</b> Course Prerequisites</a></li>
-<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#course-instructor"><i class="fa fa-check"></i><b>1.4</b> Course Instructor</a></li>
-<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#communication"><i class="fa fa-check"></i><b>1.5</b> Communication</a></li>
-<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#lectures"><i class="fa fa-check"></i><b>1.6</b> Lectures</a></li>
-<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#practical-sessions"><i class="fa fa-check"></i><b>1.7</b> Practical Sessions</a></li>
-<li class="chapter" data-level="1.8" data-path="index.html"><a href="index.html#grading"><i class="fa fa-check"></i><b>1.8</b> Grading</a></li>
-<li class="chapter" data-level="1.9" data-path="index.html"><a href="index.html#capstone-project"><i class="fa fa-check"></i><b>1.9</b> Capstone Project</a></li>
-<li class="chapter" data-level="1.10" data-path="index.html"><a href="index.html#late-assignments"><i class="fa fa-check"></i><b>1.10</b> Late Assignments</a></li>
-<li class="chapter" data-level="1.11" data-path="index.html"><a href="index.html#policies"><i class="fa fa-check"></i><b>1.11</b> Policies</a>
-<ul>
-<li class="chapter" data-level="1.11.1" data-path="index.html"><a href="index.html#collaboration"><i class="fa fa-check"></i><b>1.11.1</b> Collaboration</a></li>
-<li class="chapter" data-level="1.11.2" data-path="index.html"><a href="index.html#academic-integrity-and-plagerism"><i class="fa fa-check"></i><b>1.11.2</b> Academic Integrity and Plagerism</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="assignments.html"><a href="assignments.html"><i class="fa fa-check"></i><b>2</b> Assignments</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="assignments.html"><a href="assignments.html#Neural_Network_Components"><i class="fa fa-check"></i><b>2.1</b> Neural Network Components</a></li>
-<li class="chapter" data-level="2.2" data-path="assignments.html"><a href="assignments.html#Image_Classification"><i class="fa fa-check"></i><b>2.2</b> Image Classification</a></li>
-<li class="chapter" data-level="2.3" data-path="assignments.html"><a href="assignments.html#Music_Genre_Identification"><i class="fa fa-check"></i><b>2.3</b> Music Genre Identification</a></li>
-<li class="chapter" data-level="2.4" data-path="assignments.html"><a href="assignments.html#Image_Reconstruction"><i class="fa fa-check"></i><b>2.4</b> Image Reconstruction</a></li>
-<li class="chapter" data-level="2.5" data-path="assignments.html"><a href="assignments.html#Pop_Music_Generation"><i class="fa fa-check"></i><b>2.5</b> Pop Music Generation</a></li>
-<li class="chapter" data-level="2.6" data-path="assignments.html"><a href="assignments.html#Image_Super_Resolution"><i class="fa fa-check"></i><b>2.6</b> Image Super-Resolution</a></li>
-<li class="chapter" data-level="2.7" data-path="assignments.html"><a href="assignments.html#Music_Composition"><i class="fa fa-check"></i><b>2.7</b> Music Composition</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="capstone-project-1.html"><a href="capstone-project-1.html"><i class="fa fa-check"></i><b>3</b> Capstone Project</a></li>
-<li class="chapter" data-level="4" data-path="course-materials.html"><a href="course-materials.html"><i class="fa fa-check"></i><b>4</b> Course Materials</a>
-<ul>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#for-those-who-love-reading-books"><i class="fa fa-check"></i>For those who love reading books</a></li>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#for-those-who-like-reading-online"><i class="fa fa-check"></i>For those who like reading online</a></li>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#for-those-who-hate-reading-but-enjoy-watching"><i class="fa fa-check"></i>For those who hate reading but enjoy watching</a></li>
-<li class="chapter" data-level="" data-path="course-materials.html"><a href="course-materials.html#you-would-also-love-to-check"><i class="fa fa-check"></i>You would also love to check</a></li>
-<li class="chapter" data-level="4.1" data-path="course-materials.html"><a href="course-materials.html#extra"><i class="fa fa-check"></i><b>4.1</b> Extra</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="Lecture_Notes.html"><a href="Lecture_Notes.html"><i class="fa fa-check"></i><b>5</b> Lecture Notes</a></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-</ul>
-
-      </nav>
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</a>
-          </h1>
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Syllabus</a></li>
+<li><a class="active" href="assignments.html"><span class="header-section-number">2</span> Assignments</a></li>
+<li><a class="" href="capstone-project-1.html"><span class="header-section-number">3</span> Capstone Project</a></li>
+<li><a class="" href="course-materials.html"><span class="header-section-number">4</span> Course Materials</a></li>
+<li><a class="" href="Lecture_Notes.html"><span class="header-section-number">5</span> Lecture Notes</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          
         </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="assignments" class="section level1" number="2">
+<h1>
+<span class="header-section-number">2</span> Assignments<a class="anchor" aria-label="anchor" href="#assignments"><i class="fas fa-link"></i></a>
+</h1>
 
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="assignments" class="section level1 hasAnchor" number="2">
-<h1><span class="header-section-number">2</span> Assignments<a href="assignments.html#assignments" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-
-<div id="Neural_Network_Components" class="section level2 hasAnchor" number="2.1">
-<h2><span class="header-section-number">2.1</span> Neural Network Components<a href="assignments.html#Neural_Network_Components" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Neural_Network_Components" class="section level2" number="2.1">
+<h2>
+<span class="header-section-number">2.1</span> Neural Network Components<a class="anchor" aria-label="anchor" href="#Neural_Network_Components"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p><strong><em>Purpose</em></strong>: Understanding the fundamentals of neural networks by building components from scratch.</p></li>
 <li><p><strong><em>Components</em></strong>: Layers, activation functions, loss functions, optimizers.
@@ -143,150 +76,106 @@
 <!-- ### What to Deliver -->
 <!-- ### General guidelines --></p></li>
 </ul>
-
 </div>
-<div id="Image_Classification" class="section level2 hasAnchor" number="2.2">
-<h2><span class="header-section-number">2.2</span> Image Classification<a href="assignments.html#Image_Classification" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Image_Classification" class="section level2" number="2.2">
+<h2>
+<span class="header-section-number">2.2</span> Image Classification<a class="anchor" aria-label="anchor" href="#Image_Classification"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p><strong><em>Purpose</em></strong>: Apply knowledge to design an effective CNN for a real-world task.</p></li>
 <li><p><strong><em>Challenge</em></strong>: Achieve at least 85% validation accuracy on CIFAR-10 through architecture design and hyperparameter tuning.</p></li>
 </ul>
-<!-- ### Task Description -->
-<!-- ### Data Scheme -->
-<!-- ### Suggestions -->
-<!-- ### What to Deliver -->
-<!-- ### General guidelines -->
-
+<!-- ### Task Description --><!-- ### Data Scheme --><!-- ### Suggestions --><!-- ### What to Deliver --><!-- ### General guidelines -->
 </div>
-<div id="Music_Genre_Identification" class="section level2 hasAnchor" number="2.3">
-<h2><span class="header-section-number">2.3</span> Music Genre Identification<a href="assignments.html#Music_Genre_Identification" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Music_Genre_Identification" class="section level2" number="2.3">
+<h2>
+<span class="header-section-number">2.3</span> Music Genre Identification<a class="anchor" aria-label="anchor" href="#Music_Genre_Identification"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p><strong><em>Purpose</em></strong>: Apply image classification techniques to the musical domain using PyTorch.</p></li>
 <li><p><strong><em>Challenge</em></strong>: Design a CNN to identify the genre of a song based on its mel-spectrogram representation.</p></li>
 </ul>
-<!-- ### Task Description -->
-<!-- ### Data Scheme -->
-<!-- ### Suggestions -->
-<!-- ### What to Deliver -->
-<!-- ### General guidelines -->
-
+<!-- ### Task Description --><!-- ### Data Scheme --><!-- ### Suggestions --><!-- ### What to Deliver --><!-- ### General guidelines -->
 </div>
-<div id="Image_Reconstruction" class="section level2 hasAnchor" number="2.4">
-<h2><span class="header-section-number">2.4</span> Image Reconstruction<a href="assignments.html#Image_Reconstruction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Image_Reconstruction" class="section level2" number="2.4">
+<h2>
+<span class="header-section-number">2.4</span> Image Reconstruction<a class="anchor" aria-label="anchor" href="#Image_Reconstruction"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p><strong><em>Purpose</em></strong>: Understand supervised learning and image reconstruction.</p></li>
 <li><p><strong><em>Challenge</em></strong>: Successfully reconstruct images from the Fashion MNIST dataset using an autoencoder.</p></li>
 </ul>
-<!-- ### Task Description -->
-<!-- ### Data Scheme -->
-<!-- ### Suggestions -->
-<!-- ### What to Deliver -->
-<!-- ### General guidelines -->
-
+<!-- ### Task Description --><!-- ### Data Scheme --><!-- ### Suggestions --><!-- ### What to Deliver --><!-- ### General guidelines -->
 </div>
-<div id="Pop_Music_Generation" class="section level2 hasAnchor" number="2.5">
-<h2><span class="header-section-number">2.5</span> Pop Music Generation<a href="assignments.html#Pop_Music_Generation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Pop_Music_Generation" class="section level2" number="2.5">
+<h2>
+<span class="header-section-number">2.5</span> Pop Music Generation<a class="anchor" aria-label="anchor" href="#Pop_Music_Generation"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p><strong><em>Purpose</em></strong>: Explore sequence generation in the context of music using PyTorch.</p></li>
 <li><p><strong><em>Challenge</em></strong>: Train an LSTM model on a dataset of MIDI music files and experiment with different loss functions to generate pop music.</p></li>
 </ul>
-<!-- ### Task Description -->
-<!-- ### Data Scheme -->
-<!-- ### Suggestions -->
-<!-- ### What to Deliver -->
-<!-- ### General guidelines -->
-
+<!-- ### Task Description --><!-- ### Data Scheme --><!-- ### Suggestions --><!-- ### What to Deliver --><!-- ### General guidelines -->
 </div>
-<div id="Image_Super_Resolution" class="section level2 hasAnchor" number="2.6">
-<h2><span class="header-section-number">2.6</span> Image Super-Resolution<a href="assignments.html#Image_Super_Resolution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Image_Super_Resolution" class="section level2" number="2.6">
+<h2>
+<span class="header-section-number">2.6</span> Image Super-Resolution<a class="anchor" aria-label="anchor" href="#Image_Super_Resolution"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p><strong><em>Purpose</em></strong>: Explore the use of Generative Adversarial Networks (GANs) and Super-Resolution GANs (SRGANs) for image super resolution, which can enhance the quality of low-resolution images.</p></li>
 <li><p><strong><em>Challenge</em></strong>: Train the GAN and SRGAN models effectively, as they require large amounts of high-quality training data and careful tuning of hyper parameters to achieve good results.</p></li>
 </ul>
-<!-- ### Task Description -->
-<!-- ### Data Scheme -->
-<!-- ### Suggestions -->
-<!-- ### What to Deliver -->
-<!-- ### General guidelines -->
-
+<!-- ### Task Description --><!-- ### Data Scheme --><!-- ### Suggestions --><!-- ### What to Deliver --><!-- ### General guidelines -->
 </div>
-<div id="Music_Composition" class="section level2 hasAnchor" number="2.7">
-<h2><span class="header-section-number">2.7</span> Music Composition<a href="assignments.html#Music_Composition" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="Music_Composition" class="section level2" number="2.7">
+<h2>
+<span class="header-section-number">2.7</span> Music Composition<a class="anchor" aria-label="anchor" href="#Music_Composition"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li><p><strong><em>Purpose</em></strong>: Generate new musical compositions based on a learned latent representation using PyTorch.</p></li>
 <li><p><strong><em>Challenge</em></strong>: Train a VAE on piano music and experiment with generating novel compositions.</p></li>
 </ul>
-<!-- ### Task Description -->
-<!-- ### Data Scheme -->
-<!-- ### Suggestions -->
-<!-- ### What to Deliver -->
-<!-- ### General guidelines -->
-
+<!-- ### Task Description --><!-- ### Data Scheme --><!-- ### Suggestions --><!-- ### What to Deliver --><!-- ### General guidelines -->
 </div>
 </div>
-            </section>
+  <div class="chapter-nav">
+<div class="prev"><a href="index.html"><span class="header-section-number">1</span> Syllabus</a></div>
+<div class="next"><a href="capstone-project-1.html"><span class="header-section-number">3</span> Capstone Project</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#assignments"><span class="header-section-number">2</span> Assignments</a></li>
+<li><a class="nav-link" href="#Neural_Network_Components"><span class="header-section-number">2.1</span> Neural Network Components</a></li>
+<li><a class="nav-link" href="#Image_Classification"><span class="header-section-number">2.2</span> Image Classification</a></li>
+<li><a class="nav-link" href="#Music_Genre_Identification"><span class="header-section-number">2.3</span> Music Genre Identification</a></li>
+<li><a class="nav-link" href="#Image_Reconstruction"><span class="header-section-number">2.4</span> Image Reconstruction</a></li>
+<li><a class="nav-link" href="#Pop_Music_Generation"><span class="header-section-number">2.5</span> Pop Music Generation</a></li>
+<li><a class="nav-link" href="#Image_Super_Resolution"><span class="header-section-number">2.6</span> Image Super-Resolution</a></li>
+<li><a class="nav-link" href="#Music_Composition"><span class="header-section-number">2.7</span> Music Composition</a></li>
+</ul>
 
-          </div>
-        </div>
-      </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="capstone-project-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Introduction to Deep Learning: Bridging Theory and Practice using PyTorch</strong>" was written by Sina Moghimi. It was last built on 2024-01-08.</p>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": true,
-"facebook": false,
-"twitter": false,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": "linkedin"
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": null,
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": [["Intro2DeepLearning.pdf", "PDF"], ["Intro2DeepLearning.epub", "EPUB"]],
-"search": {
-"engine": "lunr",
-"options": null
-},
-"toc": {
-"collapse": "subsection",
-"scroll_highlight": true
-},
-"toolbar": {
-"position": "fixed"
-},
-"info": true
-});
-});
-</script>
 
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
 </body>
-
 </html>

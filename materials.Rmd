@@ -21,3 +21,8 @@
 * Physics-Informed Neural Networks: [Link](https://youtube.com/playlist?list=PLXmYoJbJ848pkMm9NGZZKXUQJ8XWIXZX8&si=_AOgnC__wzOGc9xC)
 
 * Understanding Deep Learning: [Link](https://github.com/udlbook/udlbook/tree/main)
+
+## Extra
+* Syllabus PDF file: [Link](https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.pdf)
+
+* Syllabus EPUB file: [Link](https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.epub)

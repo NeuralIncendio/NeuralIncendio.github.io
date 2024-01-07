@@ -1,0 +1,23 @@
+# Course Materials 
+
+## For those who love reading books {-}
+* Deep Learning (MIT Press, Ian Goodfellow)
+
+* Deep Learning with PyTorch (Manning Publications, Eli Stevens)
+
+## For those who like reading online {-}
+* Deep Learning: [Link](https://www.deeplearningbook.org/)
+
+* Dive into Deep Learning: [Link](https://d2l.ai/)
+
+## For those who hate reading but enjoy watching {-}
+* MIT Introduction to Deep Learning: [Link](https://youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI&si=a3Q8VooQY0cLYOBZ)
+
+* Pytorch Tutorials: [Link](https://youtube.com/playlist?list=PLhhyoLH6IjfxeoooqP9rhU3HJIAVAJ3Vz&si=423lXjNwU2B5dxaC)
+
+## You would also love to check {-}
+* Explainable AI: [Link](https://youtube.com/playlist?list=PLV8yxwGOxvvovp-j6ztxhF3QcKXT6vORU&si=7N_VPAK0OkqRGiIz)
+
+* Physics-Informed Neural Networks: [Link](https://youtube.com/playlist?list=PLXmYoJbJ848pkMm9NGZZKXUQJ8XWIXZX8&si=_AOgnC__wzOGc9xC)
+
+* Understanding Deep Learning: [Link](https://github.com/udlbook/udlbook/tree/main)

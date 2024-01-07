@@ -1,0 +1,11 @@
+## Music Composition {#Music_Composition}
+
+* ***Purpose***: Generate new musical compositions based on a learned latent representation using PyTorch.
+
+* ***Challenge***: Train a VAE on piano music and experiment with generating novel compositions.
+
+<!-- ### Task Description -->
+<!-- ### Data Scheme -->
+<!-- ### Suggestions -->
+<!-- ### What to Deliver -->
+<!-- ### General guidelines -->

@@ -1,0 +1,10 @@
+## Image Classification {#Image_Classification}
+* ***Purpose***: Apply knowledge to design an effective CNN for a real-world task.
+
+* ***Challenge***: Achieve at least 85% validation accuracy on CIFAR-10 through architecture design and hyperparameter tuning.
+
+<!-- ### Task Description -->
+<!-- ### Data Scheme -->
+<!-- ### Suggestions -->
+<!-- ### What to Deliver -->
+<!-- ### General guidelines -->

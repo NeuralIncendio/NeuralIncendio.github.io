@@ -1,0 +1,12 @@
+## Pop Music Generation {#Pop_Music_Generation}
+
+* ***Purpose***: Explore sequence generation in the context of music using PyTorch.
+
+* ***Challenge***: Train an LSTM model on a dataset of MIDI music files and experiment with different loss functions to generate pop music.
+
+
+<!-- ### Task Description -->
+<!-- ### Data Scheme -->
+<!-- ### Suggestions -->
+<!-- ### What to Deliver -->
+<!-- ### General guidelines -->

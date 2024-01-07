@@ -23,6 +23,6 @@
 * Understanding Deep Learning: [Link](https://github.com/udlbook/udlbook/tree/main)
 
 ## Extra
-* Syllabus PDF file: [Link](https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.pdf)
+* Course syllabus PDF file: [Link](https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.pdf?raw=true)
 
-* Syllabus EPUB file: [Link](https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.epub)
+* Course syllabus EPUB file: [Link](https://github.com/NeuralIncendio/neuralIncendio.github.io/blob/main/docs/Intro2DeepLearning.epub?raw=true)

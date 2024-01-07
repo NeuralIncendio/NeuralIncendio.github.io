@@ -57,8 +57,7 @@ Office Hours: Available by request.
 
 
 ## Communication 
-[NeuralIncendio web page](https://neuralincendio.github.io)  function as the main hub for the course. Discussion threads are available at [NeuralIncendio Github page](https://github.com/NeuralIncendio) for questions related to the course and for addressing coding problems or bugs.
-
+[This page](https://neuralincendio.github.io)  function as the main hub for the course. Discussion threads are available at [discussion page](https://github.com/NeuralIncendio/neuralIncendio.github.io/discussions/) for questions related to the course and for addressing coding problems or bugs.
 
 ## Lectures 
 Lectures will be held once a week on Mondays. Lectures notes will be linked on the [Lecture Notes](#Lecture_Notes) after the lecture. 

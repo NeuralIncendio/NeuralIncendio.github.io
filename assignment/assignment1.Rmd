@@ -1,9 +1,0 @@
-## Neural Network Components {#Neural_Network_Components}
-* ***Purpose***: Understanding the fundamentals of neural networks by building components from scratch.
-
-* ***Components***: Layers, activation functions, loss functions, optimizers.
-<!-- ### Task Description -->
-<!-- ### Data Scheme -->
-<!-- ### Suggestions -->
-<!-- ### What to Deliver -->
-<!-- ### General guidelines -->
